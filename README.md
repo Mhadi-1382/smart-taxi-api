@@ -8,13 +8,13 @@
 
 ## Features
 
-- Taxi fare prediction using Machine Learning.
-- REST API built with Flask.
-- JSON responses.
-- AI-generated explanations using Qwen2.5.
-- Text-to-Speech using edge-tts.
-- Automated testing with pytest.
-- Logging with Loguru.
+- Taxi fare prediction
+- REST API
+- JSON responses
+- AI-generated explanations
+- Text-to-Speech
+- Automated testing
+- Logging
 - Interactive GUI
 
 ## Tech Stack
