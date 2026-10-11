@@ -2,6 +2,8 @@
 
 <img src="https://raw.githubusercontent.com/Mhadi-1382/smart-taxi-api/refs/heads/main/assets/logo.svg" alt="Smart Taxi API" width="200">
 
+<br />
+
 *Smart Taxi API is an **intelligent web service** for estimating taxi fares based on **trip distance** and **traffic conditions**. It uses a **Machine Learning model** to predict estimated fares and provides a **Flask-based REST API**. With optional integration of **Qwen2.5** for **natural-language explanations** and **Text-to-Speech (TTS)** for **audio output**, it delivers **clear and accessible results** to users.*
 
 > **Smart Taxi** — *Travel Better. Spend Smarter.*
