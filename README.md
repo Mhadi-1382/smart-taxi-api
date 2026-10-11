@@ -10,12 +10,12 @@
 
 - Taxi fare prediction
 - REST API
+- Interactive GUI
 - JSON responses
 - AI-generated explanations
 - Text-to-Speech
 - Automated testing
 - Logging
-- Interactive GUI
 
 ## Tech Stack
 
