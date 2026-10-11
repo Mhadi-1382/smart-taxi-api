@@ -1,10 +1,8 @@
-# Smart Taxi API
-
 <br />
 
-<img src="https://raw.githubusercontent.com/Mhadi-1382/smart-taxi-api/refs/heads/main/assets/logo.svg" alt="Smart Taxi API" width="320">
+<img src="https://raw.githubusercontent.com/Mhadi-1382/smart-taxi-api/refs/heads/main/assets/logo.svg" alt="Smart Taxi API" width="200">
 
-Smart Taxi API is an intelligent web service for estimating taxi fares based on trip distance and traffic conditions. It uses a Machine Learning model to predict estimated fares and provides a Flask-based REST API. With optional integration of Qwen2.5 for natural-language explanations and Text-to-Speech (TTS) for audio output, it delivers clear and accessible results to users.
+*Smart Taxi API is an intelligent web service for estimating taxi fares based on trip distance and traffic conditions. It uses a Machine Learning model to predict estimated fares and provides a Flask-based REST API. With optional integration of Qwen2.5 for natural-language explanations and Text-to-Speech (TTS) for audio output, it delivers clear and accessible results to users.*
 
 <br />
 
@@ -17,20 +15,22 @@ Smart Taxi API is an intelligent web service for estimating taxi fares based on 
 - Text-to-Speech using edge-tts.
 - Automated testing with pytest.
 - Logging with Loguru.
+- Interactive GUI
 
 ## Tech Stack
 
-- **Language:** Python
-- **Backend:** Flask (REST API)
+- **Language:** python
+- **Backend:** flask (REST API)
+- **Interactive UI:** streamlit
 - **Machine Learning:** scikit-learn
-- **Data Processing:** pandas / CSV
-- **Model LLM:** Qwen2.5-0.5B-Instruct
+- **Data Processing:** pandas/csv
+- **LLM Model:** qwen2.5-0.5B-instruct
 - **LLM Library:** llama-cpp-python
 - **Text-to-Speech:** edge-tts
 - **HTTP Requests:** requests
 - **Testing:** pytest
-- **Logging:** Loguru
-- **Version Control:** Git / GitHub
+- **Logging:** loguru
+- **Version Control:** git/github
 
 ## Installation
 
@@ -49,17 +49,17 @@ pip install -r requirements.txt
 
 ### 3. Download the LLM Model
 
-Download the following model file:
+Choose one of the following models and place the downloaded file in the models/trained/ directory:
 
-`qwen2.5-0.5b-instruct-q4_k_m.gguf`
+- <a href="https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct-GGUF">`qwen2.5-0.5b-instruct-q4_k_m.gguf`</a> *(Recommended for lower resource usage)*
 
-Place the downloaded file in the `models/trained/` directory:
+- <a href="https://huggingface.co/Qwen/Qwen2.5-3B-Instruct-GGUF">`qwen2.5-3b-instruct-q4_k_m.gguf`</a> *(Recommended if you need more accurate and detailed explanations)*
 
 ```text
 smart-taxi-api/
 ├── models/
 │   └── trained/
-│       └── qwen2.5-0.5b-instruct-q4_k_m.gguf
+│       └── qwen2.5-0.5b-instruct-q4_k_m.gguf `or ...`
 ├── main.py
 ├── requirements.txt
 └── README.md
@@ -71,6 +71,12 @@ Make sure the model path in the application matches the location of the download
 
 ```bash
 python main.py
+```
+
+`or:`
+
+```bash
+run.bat
 ```
 
 ### 5. Run Tests
